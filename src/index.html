@@ -13,11 +13,12 @@
   <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navigation-xl sticky top-0 bg-white z-10">
-    <div class="container mx-auto  py-4">
+
+  <nav class="sticky top-0 bg-white z-10 hidden lg:block transition ease-in-out duration-300" id="navigation-xl">
+    <div class="container mx-auto px-4 py-4">
       <div class="flex items-center justify-between">
         <div class="flex items-center">
-          <img class="w-20" src="./pic/logo.png" alt="logo">
+          <a href=""><img class="w-20" src="./pic/logo.png" alt="logo"></a>
           <a class="pl-8 text-2xl font-serif-main" href="#">Diego Villaverde · <span class="text-xl text-gray-500">UX/UI Designer</span></a>
         </div>
         
@@ -31,41 +32,61 @@
     </div>
   </nav>
 
-  <div class="container mx-auto pt-8 my-24">
+  <nav class="sticky top-0 bg-white z-10 lg:hidden transition ease-in-out duration-300" id="navigation-sm">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href=""><img class="w-14" src="./pic/logo.png" alt="logo"></a>
+          <a class="pl-3 font-serif-main text-xl" href="#">Diego Villaverde<br><span class="text-lg text-gray-500">UX/UI Designer</span></a>
+        </div>
 
-    <section class="py-10">
-      <h1 class="text-5xl"><img class="w-20 inline" src="./pic/profile.png" alt="foto de perfil"> - Hola, me llamo Diego.</h1>
-      <h2 class="text-3xl pt-6">Soy un diseñador de <span class="font-bold text-indigo-600">User Experience</span>  con ámplios conocimientos en programación. Situar al usuario como foco del proceso e ir más allá del detalle son pilares esenciales en mis diseños.</h2>
-      <h2 class="text-3xl pt-14">Construyamos grandes cosas juntos.</h2>
+        <div class="cursor-pointer p-8 -mr-4 -mt-4s" id="open-nav">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto px-4 pt-8 my-12 sm:my-24">
+
+    <section class="py-5 sm:py-10">
+      <div class="flex items-center">
+        <img class="w-16 sm:w-20 inline" src="./pic/profile.png" alt="foto de perfil">
+        <h1 class="text-3xl sm:text-5xl pl-3"> - Hola, me llamo Diego.</h1>
+      </div>
+      <h2 class="text-xl sm:text-3xl pt-6">Soy un diseñador de <span class="font-bold text-indigo-600">User Experience</span>  con ámplios conocimientos en programación. Situar al usuario como foco del proceso e ir más allá del detalle son pilares esenciales en mis diseños.</h2>
+      <h2 class="text-xl sm:text-3xl pt-14">Construyamos grandes cosas juntos.</h2>
   
-      <div class="relative shadow-md font-medium my-5 py-2 px-4 text-white cursor-pointer bg-indigo-600 hover:bg-indigo-500 rounded text-lg text-center w-48">
+      <div class="relative shadow-md font-medium mx-auto sm:ml-0 my-10 sm:my-5 py-2 px-4 text-white cursor-pointer bg-indigo-600 hover:bg-indigo-500 rounded text-lg text-center w-40 sm:w-48">
         <span class="absolute h-3 w-3 right-0 top-0 animate-ping inline-flex rounded-full h-3 w-3 bg-indigo-600">
         </span>
         <div class="flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
           </svg>
-          <span class="pl-1 pb-1 text-xl">Contactar</span>
+          <span class="pl-1 pb-1 text-lg">Contactar</span>
         </div>
       </div>
     </section>
 
-    <section class="py-20">
-      <h2 class="text-4xl font-serif-main underline">· Proyectos recientes</h2>
+    <section class="py-0 sm:py-20">
+      <h2 class="text-3xl sm:text-4xl font-serif-main underline">· Proyectos recientes</h2>
       
       <div class="mt-14 h-96 bg-neutral-900 flex items-center justify-center shadow relative transition ease-in-out hover:-translate-y-4 duration-150">
         <a class="absolute w-full h-full" href="#"></a>
-        <h2 class="text-7xl text-white font-serif-main">Título del proyecto</h2>
+        <h2 class="text-2xl sm:text-7xl text-white font-serif-main">Título del proyecto</h2>
       </div>
 
       <div class="mt-14 h-96 bg-rose-100 flex items-center justify-center shadow relative transition ease-in-out hover:-translate-y-4 duration-150">
         <a class="absolute w-full h-full" href="#"></a>
-        <h2 class="text-7xl font-serif-main">Título del proyecto</h2>
+        <h2 class="text-2xl sm:text-7xl font-serif-main">Título del proyecto</h2>
       </div>
       
       <div class="mt-14 h-96 bg-teal-100 flex items-center justify-center shadow relative transition ease-in-out hover:-translate-y-4 duration-150">
         <a class="absolute w-full h-full" href="#"></a>
-        <h2 class="text-7xl font-serif-main">Título del proyecto</h2>
+        <h2 class="text-2xl sm:text-7xl font-serif-main">Título del proyecto</h2>
       </div>
 
       <div class="mx-auto shadow-md font-medium my-10 py-2 px-4 text-white cursor-pointer bg-neutral-900 hover:bg-neutral-800 rounded text-lg text-center w-48">
@@ -76,15 +97,15 @@
   </div>
 
   <footer class="text-slate-100 py-10">
-    <div class="container mx-auto">
-      <p class="text-5xl">
+    <div class="container px-4 mx-auto">
+      <p class="text-3xl lg:text-5xl">
         Déjame un mensaje:
       </p>
-      <p class="text-5xl pt-4">
+      <p class="text-3xl break-words sm:break-normal lg:text-5xl pt-4">
         <a class="hover:underline" href="mailto:dvillaverdeprado@gmail.com">dvillaverdeprado@gmail.com</a>
       </p>
 
-      <p class="pt-14 text-2xl">Hablemos sobre un proyecto interesante que tengas o simplemente pásate a decir hola, estaré encantado de charlar.</p>
+      <p class="pt-14 text-lg lg:text-2xl">Hablemos sobre un proyecto interesante que tengas o simplemente pásate a decir hola, estaré encantado de charlar.</p>
       <div class="text-white pt-5">
         <a class="-ml-2 p-2 mr-1" href="https://twitter.com/DiegoVp93" target="_blank">
           <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="w-10 h-10 inline" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg>
@@ -95,7 +116,30 @@
       </div>
     </div>
   </footer>
-  
 
+  <div class="bg-white z-20 fixed inset-0 overflow-y-auto lg:hidden transition-all ease-in-out duration-150 transform translate-x-full" id="menu_sm">
+    <div class="absolute right-0">
+      <div class="p-8 cursor-pointer" id="close-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </div>
+    <div class="h-full w-full flex items-center justify-center">
+      <ul class="flex flex-col w-full text-center text-3xl">
+        <li class="pb-4"><a class="block py-4" href="#">Proyectos</a></li>
+        <li class="pb-4"><a class="block py-4" href="#">Sobre mí</a></li>
+        <li class="pb-4"><a class="block py-4" href="#">Curriculum</a></li>
+        <li class="pb-4"><a class="block py-4" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous">
+  </script>
+  <script src="main.js"></script> 
 </body>
 </html>
