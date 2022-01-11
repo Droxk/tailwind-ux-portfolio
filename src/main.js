@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+    $("body").removeClass("opacity-0");
+
     // Añadir overflow hidden al body cuando se abre el menu y eliminarlo cuando se cierra
     var body = $("body");
     var nav_xl = $("#navigation-xl");
